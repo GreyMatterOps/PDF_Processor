@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF_Processor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class = "container">
+<h1>PDF Processor</h1>
+<div class = "AddFile">   
+<input type="file" id="fileInput" hidden>   
+<!--Input type file creates a file upload input with id to access it also 
+the button kind thing is hidden as default button is too boring we instead 
+use label and trigger the process when someone clicks a label-->
+<label for="fileInput" class="upload_label">
+  Click to upload
+</label>
+<p>Only one file supported</p>
+</div>
+<div class = "FileStatus">
+  <p>Status: Pending</p>
+</div>
+<div class = "FileView">
+  <button>Preview PDF</button>
+</div>
+<div class = "Options">
+<label>
+  <input type="radio" name="Option_Selector" value="order_reverser"> Order Reverser
+</label>
+
+<label>
+  <input type="radio" name="Option_Selector" value="odd_even"> Odd Even Separator
+</label>
+</div>
+<div class = "RUN">
+<button disabled>RUN</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

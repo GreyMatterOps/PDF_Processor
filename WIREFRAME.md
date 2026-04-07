@@ -100,4 +100,3 @@ Options:
 - Keep UI minimal and responsive
 - Ensure clear feedback for all user actions
 - Maintain separation between UI, processing logic, and file handling
-
